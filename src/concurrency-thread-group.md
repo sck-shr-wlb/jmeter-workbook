@@ -1,6 +1,6 @@
 # Concurrency Thread Group
 
-- Prerequisite: Install [Custom Thread Group](./jmeter-plugins.md)
+- Prerequisite: Install [Custom Thread Group](./jmeter-plugins.md#install-custom-thread-group)
 
 1. Create Test Plan: Name `Google Concurrency Thread Group`
    ![google-concurrency-thread-group-02](images/google-concurrency-thread-group-02.png)

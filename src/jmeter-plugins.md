@@ -20,7 +20,7 @@
 
 ## Install Custom Thread Group
 
-- Prerequisite: Install [Plugins Manager](#install-plugins-manager)
+- Prerequisite: [Install Plugins Manager](#install-plugins-manager)
 
 1. Default Thread Group
    ![install-custom-thread-groups-plugin-00](images/plugins/install-custom-thread-groups-plugin-00.png)

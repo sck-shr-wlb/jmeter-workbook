@@ -1,6 +1,6 @@
 # Ultimate Thread Group
 
-- Prerequisite: Install [Custom Thread Group](./jmeter-plugins.md)
+- Prerequisite: Install [Custom Thread Group](./jmeter-plugins.md#install-custom-thread-group)
   
 1. Create Test Plan: Name `Google Ultimate Thread Group`
    ![google-ultimate-thread-group-01](images/google-ultimate-thread-group-01.png)
