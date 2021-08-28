@@ -6,4 +6,4 @@
 
 ---
 
-- [Plugins Manager](./plugins-manager.md)
+- [Jmeter Plugins](jmeter-plugins.md)
