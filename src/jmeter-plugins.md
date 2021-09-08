@@ -18,7 +18,7 @@
 7. Close and Open JMeter then Click JMeter Options
    ![plugins manager options](images/plugins/install-plugins-manager-06.png)
 
-## Install Custom Thread Group
+## Install Custom Thread Groups
 
 - Prerequisite: [Install Plugins Manager](#install-plugins-manager)
 
@@ -26,7 +26,7 @@
    ![install-custom-thread-groups-plugin-00](images/plugins/install-custom-thread-groups-plugin-00.png)
 2. Click JMeter `Options`, then `Select Plugins Manager`
    ![install-custom-thread-groups-plugin-01](images/plugins/install-custom-thread-groups-plugin-01.png)
-3. On Available Plugins, check `Custom Thread Group`
+3. On Available Plugins, check `Custom Thread Groups`
    ![install-custom-thread-groups-plugin-02](images/plugins/install-custom-thread-groups-plugin-02.png)
 4. Close and Open JMeter again, then Verify Plugins
    1. Click `Add` -> `Threads (Users)`
