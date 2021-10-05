@@ -7,4 +7,8 @@
 
 ---
 
-- [Jmeter Plugins](jmeter-plugins.md)
+- [Jmeter Plugins](./jmeter-plugins.md)
+
+---
+
+- [Taurus](./taurus.md)
