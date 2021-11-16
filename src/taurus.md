@@ -154,3 +154,41 @@ services:
     post-process:
       - '[ -f "${TAURUS_ARTIFACTS_DIR}/kpi.jtl" ] && /path/to/jmeter -g "${TAURUS_ARTIFACTS_DIR}/kpi.jtl" -o "${TAURUS_ARTIFACTS_DIR}/dashboard" -j "${TAURUS_ARTIFACTS_DIR}/generate_report.log" '
 ```
+
+## Example config.yml
+
+```yml
+modules:
+  jmeter:
+    memory-xmx: 4G
+    path: /path-to/jmeter
+    properties:
+      prop_name: prop value
+    system-properties:
+      sun.net.http.allowRestrictedHeaders: 'true'
+    csv-jtl-flags:
+      saveAssertionResultsFailureMessage: true
+      sentBytes: true
+
+reporting:
+  - module: passfail
+    criteria:
+      - avg-rt>1.5s, continue as failed
+  - module: final-stats
+    summary: true # overall samples count and percent of failures
+    percentiles: true # display average times and percentiles
+    summary-labels: false # provides list of sample labels, status, percentage of completed, avg time and errors
+    failed-labels: false # provides list of sample labels with failures
+    test-duration: true # provides test duration
+    dump-xml: final-stats.xml
+    dump-csv: final-stats.csv
+    #- module: blazemeter
+  - module: junit-xml
+    filename: junit.xml
+    data-source: pass-fail
+
+services:
+  - module: shellexec
+    post-process:
+      - '[ -f "${TAURUS_ARTIFACTS_DIR}/kpi.jtl" ] && /path-to/jmeter -g "${TAURUS_ARTIFACTS_DIR}/kpi.jtl" -o "${TAURUS_ARTIFACTS_DIR}/dashboard" -j "${TAURUS_ARTIFACTS_DIR}/generate_report.log" '
+```
