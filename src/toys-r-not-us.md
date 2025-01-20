@@ -117,3 +117,9 @@
       ```
 
     ![Create Test Plan](./images/toys-r-not-us/toys-r-not-us-15.png)
+
+---
+
+## References
+
+1. [shopping-cart](https://github.com/SCK-SEAL-TEAM-One/shopping-cart)
