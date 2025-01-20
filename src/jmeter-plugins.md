@@ -31,5 +31,13 @@
 4. Close and Open JMeter again, then Verify Plugins
    1. Click `Add` -> `Threads (Users)`
       ![install-custom-thread-groups-plugin-03](images/plugins/install-custom-thread-groups-plugin-03.png)
-   2. Go to `lib/ext` and looking for `jmeter-plugins-casutg-2.9.jar`
+   2. Go to `lib/ext` and looking for `jmeter-plugins-casutg-2.10.jar`
       ![install-custom-thread-groups-plugin-04](images/plugins/install-custom-thread-groups-plugin-04.png)
+
+---
+
+## References
+
+1. [Concurrency thread group](https://jmeter-plugins.org/wiki/ConcurrencyThreadGroup/)
+2. [jmeter thread group](blazemeter.com/blog/jmeter-thread-group)
+3. [Top ten jmeter plugins](https://www.blazemeter.com/blog/top-ten-jmeter-plugins)
