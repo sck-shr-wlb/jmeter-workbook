@@ -34,17 +34,27 @@
 2. Create Test Group with `Thread Group`
    ![add thread group](./images/csv/02-thread-group.png)
 3. Set `CSV Data Set Config`
+
+   `sck-online-store.csv`
+
+   ```csv
+   1,SportsFun
+   2,CoolKidz
+   3,CoolKidz
+   ```
+
    ![add csv data set config](./images/csv/03-add-csv-data-set-config.png)
    ![config csv data set config](./images/csv/04-csv-data-set-config.png)
+
 4. Set `Http Request`
    ![add http request](./images/csv/05-add-http-request.png)
    ![http request](./images/csv/06-http-request.png)
 5. Add `Response Assertion`
-    ![add response assertion](./images/csv/07-add-response-assertion.png)
-    ![response assertion](./images/csv/08-response-assertion.png)
+   ![add response assertion](./images/csv/07-add-response-assertion.png)
+   ![response assertion](./images/csv/08-response-assertion.png)
 6. Add `JSON Assertion`
-    ![add json assertion](./images/csv/09-add-json-assertion.png)
-    ![json assertion](./images/csv/10-json-assertion.png)
+   ![add json assertion](./images/csv/09-add-json-assertion.png)
+   ![json assertion](./images/csv/10-json-assertion.png)
 
 ---
 
