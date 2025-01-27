@@ -6,6 +6,7 @@
 - [Toys'r not us](./toys-r-not-us.md)
 - [JDBC Test Plan](./jdbc.md)
 - [Data Driven with CSV](./data-driven-with-csv.md)
+- [User Defined Variables](./user-defined-variables.md)
 
 ---
 
