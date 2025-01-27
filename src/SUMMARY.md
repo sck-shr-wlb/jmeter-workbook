@@ -6,11 +6,13 @@
 - [Toys'r not us](./toys-r-not-us.md)
 - [JDBC Test Plan](./jdbc.md)
 
+
 ---
 
 ## Jmeter
 
 - [Jmeter download](https://jmeter.apache.org/download_jmeter.cgi)
+- [Jmeter best practices](https://jmeter.apache.org/usermanual/best-practices.html)
 
 ---
 

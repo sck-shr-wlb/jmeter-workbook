@@ -1,5 +1,8 @@
 # Jmeter JDBC Test Plan
 
+1. [Start Database](#start-database)
+2. [Create Test Plan](#create-test-plan)
+
 ---
 
 ## Start database
@@ -27,16 +30,16 @@
 ## Create Test Plan
 
 1. Create Test Plan call `JDBC_Test_Plan`
-   ![test plan](./images/jdbc/test-plan.png)
-2. Create Test Group with `Ultimate Thread Group`
-   ![add thread group](./images/jdbc/add-ultimate-thread-group.png)
-   ![config thread group](./images/jdbc/thread-group.png)
+   ![test plan](./images/jdbc/01-test-plan.png)
+2. Create Test Group with `Thread Group`
+   ![add thread group](./images/jdbc/02-thread-group.png)
 3. Set `JDBC Connection Configuration`
-   ![add jdbc connection configuration](./images/jdbc/add-jdbc-connection-configuration.png)
-   ![config jdbc connection configuration](./images/jdbc/jdbc-connection-configuration.png)
+   ![add jdbc connection configuration](./images/jdbc/03-add-jdbc-connection-configuration.png)
+   ![config jdbc connection configuration](./images/jdbc/04-jdbc-connection-configuration.png)
 4. Set `JDBC Request`
-   ![add jdbc request](./images/jdbc/add-sampler-jdbc-request.png)
-   ![jdbc request](./images/jdbc/jdbc-request.png)
+   ![add jdbc request](./images/jdbc/05-add-jdbc-request.png)
+   ![jdbc request](./images/jdbc/06-jdbc-request.png)
+5. [JMX](./examples/mysql-jdbc.jmx)
 
 ---
 
@@ -58,4 +61,5 @@
 ## References
 
 1. [build-db-test-plan](https://jmeter.apache.org/usermanual/build-db-test-plan.html)
-2. [jmeter-parameterization](https://www.blazemeter.com/blog/jmeter-parameterization)
+2. [JDBC_Request](https://jmeter.apache.org/usermanual/component_reference.html#JDBC_Request)
+3. [jmeter-parameterization](https://www.blazemeter.com/blog/jmeter-parameterization)
