@@ -7,7 +7,7 @@
 - [JDBC Test Plan](./jdbc.md)
 - [Data Driven with CSV](./data-driven-with-csv.md)
 - [User Defined Variables](./user-defined-variables.md)
-- [CSV, JSR 223, and Loop Control](./csv-jsr223-loop-control)
+- [CSV, JSR 223, and Loop Control](./csv-jsr223-loop-control.md)
 
 ---
 
