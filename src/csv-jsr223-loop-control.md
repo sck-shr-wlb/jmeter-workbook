@@ -26,6 +26,20 @@
 
    ![extract csv](./images/jsr223-groovy/03-extract-csv.png)
 
+   ```groovy
+   import groovy.json.JsonSlurper
+
+   def cart = vars.get("cart")
+   def jsonSlurper = new JsonSlurper()
+   def object = jsonSlurper.parseText(cart)
+
+   def orderSize = object.cart.size
+   //log.info("cart size: " + cartSize)
+
+   vars.putObject("orderSize", orderSize)
+   vars.putObject("orderList", object.cart)
+   ```
+
    > Extract ค่า `cart` จาก `csv` โดยหาขนาดของ order และ orderList
 
 5. Loop Control
@@ -38,11 +52,38 @@
 
    ![extract order item](./images/jsr223-groovy/05-extract-item.png)
 
+   ```groovy
+   import groovy.json.JsonOutput
+
+   def idx = vars.get("__jm__LC__idx")
+   def cart = vars.getObject("orderList")
+   def item = cart.get(idx.toInteger())
+   def json = JsonOutput.toJson(item)
+
+   vars.putObject("itemObject", json)
+   ```
+
    > ตั้งค่า `itemObject` จากตำแหน่ง `idx` ของ `orderList`
 
 7. Summit Order
 
    ![submit order](./images/jsr223-groovy/06-submit-order.png)
+
+   ```groovy
+   {
+        "cart": [
+            ${itemObject}
+        ],
+        "shipping_method": "Kerry",
+        "shipping_address": "405/37 ถ.มหิดล",
+        "shipping_sub_district": "ท่าศาลา",
+        "shipping_district": "เมือง",
+        "shipping_province": "เชียงใหม่",
+        "shipping_zip_code": "50000",
+        "recipient_name": "ณัฐญา ชุติบุตร",
+        "recipient_phone_number": "0970809292"
+   }
+   ```
 
    > แทนที่ `"cart" : [ .... ]` ด้วย `${itemObject}`
 
